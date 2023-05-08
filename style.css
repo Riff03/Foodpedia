@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+
+#hero > img{
+    
+}
+
+main > #hero >.judul{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
