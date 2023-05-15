@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodpedia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
     <nav>
+      <div class="nav-kiri">
         <div class="logo">
-            <img src="/Foto/FoodpediaFoodpedia.png" alt="" srcset="">
+          <img src="/Foto/FoodpediaFoodpedia.png" alt="" srcset="" />
+        </div>
+        <div class="menu-trigger">
+          <button>
+            =
+          </button>
         </div>
         <div class="menu">
-            <a href="#">Resep</a>
-            <a href="#">Kuliner</a>
-            <a href="#">About Us</a>
+          <a href="#">Resep</a>
+          <a href="#">Kuliner</a>
+          <a href="#">About Us</a>
         </div>
-        <div class="tools">
-            <img src="/Foto/Search.png" alt="" srcset="">
-        </div>
+      </div>
+      <div class="search">
+        <img class="search-btn" src="Foto/Search.png" alt="" srcset="" />
+        <input type="text" placeholder="Cari Masakan Anda..." />
+        <button type="submit">Search</button>
+      </div>
     </nav>
+
     <main>
-        <section id="hero">
-            <h1 class="judul">
-                <img src="/Foto/FoodpediaFp White.png" alt="">
-            </h1>
-            <img src="/Foto/Component 1slide.svg" alt="" srcset="">
-        </section>
+      <section class="home">
+        <div class="judul">
+          <img src="Foto/FoodpediaFp White.png" alt="" srcset="" />
+        </div>
+      </section>
     </main>
-</body>
+
+    <div class="cari">
+      <div class="search-box">
+        <img class="search-btn" src="Foto/Search.png" alt="" srcset="" />
+        <input type="text" placeholder="Cari Masakan Anda..." />
+        <button type="submit">Search</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <p>About Us</p>
+      </footer>
+    </div>
+
+
+
+
+    <script src="nav.js"></script>
+  </body>
 </html>

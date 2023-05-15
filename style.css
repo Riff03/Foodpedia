@@ -1,13 +1,29 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-#hero > img{
-    
+section {
+  padding-top: 10px;
+  height: auto;
 }
 
-main > #hero >.judul{
-    color: white;
-    display: flex;
-    justify-content: center;
+section > .judul {
+  display: flex;
+  padding: 15px 0px;
+  align-items: start;
+  justify-content: center;
+  background-image: url("Foto/Component 1slide.svg");
+  width: 100%;
+  height: 710px;
+  background-size: 100%;
+  background-position: center;
 }
+
+section > .judul > img {
+  margin-top: 150px;
+  height: 15%;
+}
+
+
+
+
