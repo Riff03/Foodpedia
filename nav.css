@@ -30,7 +30,7 @@ nav > div > .menu > a {
 }
 
 .search {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-evenly;
   margin-right: 20px;
@@ -65,18 +65,35 @@ nav > div > .menu > a {
 }
 
 .menu{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  z-index: 99;
+  position: fixed;
+  background-color: white;
+  top: 44px;
+  width: 100px;
+  transform: translateX(-100%);
+  transition-duration: 300ms;
 }
 
-@media(min-width: 360px){
-  .menu{
+.menu-trigger{
+  
+}
+
+@media (min-width: 720px) {
+  .search{
     display: flex;
   }
-  .menu{
+  .menu {
+    transform: translateX(0) !important;
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: inherit;
+    width: auto;
+  }
+  .menu-trigger {
     display: none;
   }
-}
-
-button{
-  
 }

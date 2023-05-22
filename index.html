@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="search.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="content.css" />
   </head>
 
   <body>
     <nav>
       <div class="nav-kiri">
-        <div class="logo">
-          <img src="/Foto/FoodpediaFoodpedia.png" alt="" srcset="" />
-        </div>
         <div class="menu-trigger">
           <button>
             =
           </button>
         </div>
+        
+        <div class="logo">
+          <img src="/Foto/FoodpediaFoodpedia.png" alt="" srcset="" />
+        </div>
+        
         <div class="menu">
           <a href="#">Resep</a>
           <a href="#">Kuliner</a>
@@ -51,15 +54,36 @@
       </div>
     </div>
 
+    <div>
+      <div>
+        <h3 class="resep">
+          Resep Teratas
+        </h3>
+      </div>
+      <div>
+        <section id="content">
+          <table border="1">
+            <tr>
+              <td>Id</td>
+              <td>menu</td>
+              <td>Detail</td>
+              <td>Gambar</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+    
+    <hr>
+
+
     <div class="footer">
       <footer>
         <p>About Us</p>
       </footer>
     </div>
 
-
-
-
     <script src="nav.js"></script>
+    <script src="content.js"></script>
   </body>
 </html>
