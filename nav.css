@@ -19,17 +19,7 @@ nav > div > .logo {
   align-items: center;
 }
 
-nav > div > .menu > a {
-  text-decoration: none;
-  color: midnightblue;
-  font-size: 23px;
-  padding: 0 15px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.search {
+nav > .search {
   display: none;
   align-items: center;
   justify-content: space-evenly;
@@ -45,10 +35,10 @@ nav > div > .menu > a {
 }
 
 .search > input[type="text"] {
-  padding: 10px;
+  padding: 6px;
   padding-left: 20px;
   font-size: 16px;
-  width: 300px;
+  width: 70%;
   border-radius: 20px;
   border: none;
 }
@@ -64,6 +54,22 @@ nav > div > .menu > a {
   margin-right: 8px;
 }
 
+nav > div > .menu > a {
+  text-decoration: none;
+  color: midnightblue;
+  font-size: 23px;
+  padding: 0 15px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+nav div .menu {
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -71,22 +77,23 @@ nav > div > .menu > a {
   z-index: 99;
   position: fixed;
   background-color: white;
-  top: 44px;
-  width: 100px;
+  top: 80px;
+  width: 30%;
   transform: translateX(-100%);
   transition-duration: 300ms;
 }
 
 .menu-trigger{
-  
+  display: flex;
 }
 
 @media (min-width: 720px) {
-  .search{
+  nav> .search{
     display: flex;
+    width: 30%;
   }
   .menu {
-    transform: translateX(0) !important;
+    transform: translateX(0%) !important;
     display: flex;
     position: static;
     flex-direction: row;

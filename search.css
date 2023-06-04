@@ -1,29 +1,31 @@
-.cari{
+.cari {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .search-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -430px;
-  margin-left: 30%;
+  margin-top: -400px;
+  /* margin-left: 30%; */
   background-color: white;
   height: 40px;
-  width: 600px;
+  width: 45%;
   border-radius: 25px;
 }
 
-.search-btn{
+.search-btn {
   height: 70%;
   padding-left: 10px;
 }
 
 input[type="text"] {
-  padding: 10px;
+  padding: 6px;
   padding-left: 20px;
   font-size: 16px;
-  width: 450px;
+  width: 100%;
   border-radius: 20px;
   border: none;
 }
