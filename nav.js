@@ -1,20 +1,21 @@
-let open = false
+document.querySelector(".menu-trigger").addEventListener("click", function () {
+  document
+    .querySelector(".menu")
+    .setAttribute("style", "transform : translateX(0%)");
+  document.querySelector(".search").setAttribute("style", "display: flex");
+});
 
-document.querySelector('.menu-trigger').addEventListener('click', function() {
-    if(!open){
-        document.querySelector('.menu').setAttribute('style','transform : translateX(0%)')
-        document.querySelector('.search').setAttribute('style','display: flex')
-    }else{
-        document.querySelector('.menu').setAttribute('style','transform : translateX(-100%)')
-        document.querySelector('.search').setAttribute('style','display: none')
-    }
-    open=!open
-})
+document.querySelector(".menu-close").addEventListener("click", function () {
+  document
+    .querySelector(".menu")
+    .setAttribute("style", "transform : translateX(-100%)");
+  document.querySelector(".search").setAttribute("style", "display: none");
+});
 
 // document.querySelector('.search').addEventListener('onchange',function () {
 
 //   }) {
-    
+
 // })
 
 // const variableA = 10
