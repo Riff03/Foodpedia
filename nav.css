@@ -89,7 +89,7 @@ nav div .menu {
 
 @media (min-width: 720px) {
   nav> .search{
-    display: flex;
+    display: flex !important;
     width: 30%;
   }
   .menu {
