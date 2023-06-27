@@ -5,22 +5,30 @@ body {
 section {
   padding-top: 10px;
   height: auto;
+  z-index: 1;
+}
+
+section .bg img{
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 
 section > .judul {
+  position: absolute;
   display: flex;
   padding: 15px 0px;
   align-items: start;
   justify-content: center;
-  background-image: url("Foto/Component 1slide.svg");
+  z-index: 3;
   width: 100%;
-  height: 640px;
-  background-size: 100%;
-  background-position: center;
 }
 
 section > .judul > img {
-  margin-top: 150px;
+  position: static;
+  margin-top: -35%;
+  width: 25%;
   height: 15%;
 }
 

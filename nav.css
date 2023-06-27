@@ -4,6 +4,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
 }
 
 nav div {
@@ -87,6 +90,7 @@ nav div .menu {
   display: flex;
   font-size: 30px;
   margin-left: 10px;
+
 }
 
 .menu-close{
